@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'io.fabric'
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
@@ -49,9 +48,6 @@ dependencies {
 
     implementation 'org.cyanogenmod:platform.sdk:6.0'
 
-    debugImplementation 'com.crashlytics.sdk.android:crashlytics:2.9.5'
-    debugImplementation 'com.google.firebase:firebase-core:16.0.3'
-
     implementation 'org.greenrobot:eventbus:3.1.1'
 
     // Support Libs
@@ -99,5 +95,3 @@ dependencies {
     androidTestImplementation "com.android.support.test:runner:${rootProject.ext.runnerRulesVersion}"
     androidTestImplementation "com.android.support.test:rules:${rootProject.ext.runnerRulesVersion}"
 }
-
-apply plugin: 'com.google.gms.google-services'
